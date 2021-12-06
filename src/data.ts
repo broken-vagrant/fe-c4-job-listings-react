@@ -2,7 +2,7 @@ export default [
   {
     id: 1,
     company: 'Photosnap',
-    logo: '/images/photosnap.svg',
+    logo: './images/photosnap.svg',
     new: true,
     featured: true,
     position: 'Senior Frontend Developer',
@@ -17,7 +17,7 @@ export default [
   {
     id: 2,
     company: 'Manage',
-    logo: '/images/manage.svg',
+    logo: './images/manage.svg',
     new: true,
     featured: true,
     position: 'Fullstack Developer',
@@ -32,7 +32,7 @@ export default [
   {
     id: 3,
     company: 'Account',
-    logo: '/images/account.svg',
+    logo: './images/account.svg',
     new: true,
     featured: false,
     position: 'Junior Frontend Developer',
@@ -47,7 +47,7 @@ export default [
   {
     id: 4,
     company: 'MyHome',
-    logo: '/images/myhome.svg',
+    logo: './images/myhome.svg',
     new: false,
     featured: false,
     position: 'Junior Frontend Developer',

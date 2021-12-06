@@ -14,7 +14,7 @@ const ListItem = ({ item }: { item: JobItem }) => {
             <span className="name">{item.company}</span>
             <span className="top-details-tags">
               {item.new ? <Tag>New!</Tag> : null}
-              {item.featured ? <Tag>Featured</Tag> : null}
+              {item.featured ? <Tag fill="dark" >Featured</Tag> : null}
             </span>
           </div>
           <a href="#" className="title">

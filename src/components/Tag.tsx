@@ -1,7 +1,7 @@
 import { ReactNode } from 'react';
 
-const Tag = ({ children }: { children: ReactNode }) => {
-  return <span className="tag">{children}</span>;
+const Tag = ({ children, fill }: { children: ReactNode, fill?: 'primary' | 'dark' }) => {
+  return <span className={`tag ${fill === 'dark' ? 'dark' : ''}`}>{children}</span>;
 };
 
 export default Tag;

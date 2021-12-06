@@ -7,8 +7,7 @@ import ListItems from './components/ListItems';
 
 const initialState = {
   jobs: data,
-  // filters: ['Frontend', 'CSS', 'JavaScript'],
-  filters: [],
+  filters: ['Frontend', 'CSS', 'JavaScript'],
 };
 
 const filterJobs = (jobs: JobItem[], filters: string[]) => {
