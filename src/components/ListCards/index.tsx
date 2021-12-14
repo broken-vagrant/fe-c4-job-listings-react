@@ -1,7 +1,7 @@
-import { JobItem } from '../type';
-import ListItem from './ListItem';
+import { JobItem } from '../../type';
+import ListItem from './ListCard';
 
-const ListItems = ({ jobs }: { jobs: JobItem[] }) => {
+const ListCards = ({ jobs }: { jobs: JobItem[] }) => {
   return (
     <div className="container">
       <section className="jobs">
@@ -12,4 +12,4 @@ const ListItems = ({ jobs }: { jobs: JobItem[] }) => {
     </div>
   );
 };
-export default ListItems;
+export default ListCards;

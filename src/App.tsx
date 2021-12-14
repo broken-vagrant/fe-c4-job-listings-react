@@ -1,9 +1,10 @@
 import './App.css';
 import data from './data';
-import { createContext, Dispatch, useEffect, useMemo, useReducer } from 'react';
+import { createContext, Dispatch, useEffect, useReducer } from 'react';
 import { Action, JobItem } from './type';
 import Header from './components/Header';
-import ListItems from './components/ListItems';
+import ListCards from './components/ListCards';
+import FilterInput from './components/FilterInput';
 
 const initialState = {
   jobs: data,
@@ -83,9 +84,12 @@ function App() {
   return (
     <JobsDispatch.Provider value={dispatch}>
       <div className="App">
-        <Header filters={data.filters} />
+        <Header />
         <main>
-          <ListItems jobs={data.jobs} />
+          <div className="container">
+            <FilterInput filters={data.filters} />
+          </div>
+          <ListCards jobs={data.jobs} />
         </main>
       </div>
     </JobsDispatch.Provider>

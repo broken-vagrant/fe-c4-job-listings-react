@@ -3,7 +3,7 @@ import { JobsDispatch } from '../../App';
 import FilterItem from './FilterItem';
 import { KeyboardEvent } from 'react';
 
-const FilterListItems = ({ filters }: { filters: string[] }) => {
+const FilterInput = ({ filters }: { filters: string[] }) => {
   const dispatch = useContext(JobsDispatch)!;
   const [inputVal, setInputVal] = useState('');
 
@@ -46,4 +46,4 @@ const FilterListItems = ({ filters }: { filters: string[] }) => {
   );
 };
 
-export default FilterListItems;
+export default FilterInput;

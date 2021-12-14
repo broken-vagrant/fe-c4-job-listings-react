@@ -1,11 +1,6 @@
-import FilterListItems from './FilterListItems';
-
-const Header = ({ filters }: { filters: string[] }) => {
+const Header = () => {
   return (
     <header className="hero">
-      <div className="container">
-        <FilterListItems filters={filters} />
-      </div>
     </header>
   );
 };

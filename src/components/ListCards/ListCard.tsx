@@ -1,8 +1,9 @@
-import { JobItem } from '../type';
-import InfoTag from './InfoTag';
-import Tag from './Tag';
+import React from 'react';
+import { JobItem } from '../../type';
+import InfoTag from '../InfoTag';
+import Tag from '../Tag';
 
-const ListItem = ({ item }: { item: JobItem }) => {
+const ListCard = React.memo(({ item }: { item: JobItem }) => {
   return (
     <article className="list-card featured">
       <div className="info">
@@ -39,6 +40,6 @@ const ListItem = ({ item }: { item: JobItem }) => {
       </div>
     </article>
   );
-};
+});
 
-export default ListItem;
+export default ListCard;
