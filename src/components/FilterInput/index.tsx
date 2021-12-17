@@ -30,6 +30,7 @@ const FilterInput = ({ filters }: { filters: string[] }) => {
               value={inputVal}
               onChange={(e) => setInputVal(e.target.value)}
               onKeyUp={handleKeyUp}
+              aria-label="type filter or key word and press enter"
             />
           </div>
         </div>

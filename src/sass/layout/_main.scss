@@ -1,5 +1,6 @@
 main {
   background-color: $color-lightgrayish-cyan-1;
+  min-height: 100vh;
   @media (max-width: $vw-mobile-max) {
     margin-top: 4rem;
   }

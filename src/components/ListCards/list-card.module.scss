@@ -62,7 +62,9 @@
       &:hover {
         color: $color-primary;
       }
-      div {
+      h1 {
+        font-size: 1em;
+        font-weight: bold;
         margin: 0.8em 0;
       }
       @media (max-width: $vw-mobile-max) {

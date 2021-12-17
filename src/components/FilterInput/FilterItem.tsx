@@ -8,6 +8,7 @@ const FilterItem = ({ value }: { value: string }) => {
     <div className={classes['filter-item']}>
       <span>{value}</span>
       <button
+        aria-label={`remove ${value} filter`}
         onClick={() => dispatch({ type: 'filter-remove', payload: value })}
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14">

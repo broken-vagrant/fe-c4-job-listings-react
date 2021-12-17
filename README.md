@@ -1,6 +1,6 @@
 # Frontend Mentor - Job listings with filtering solution
 
-This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Job listings with filtering challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/job-listings-with-filtering-ivstIPCt). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -8,7 +8,6 @@ This is a solution to the [Job listings with filtering challenge on Frontend Men
   - [The challenge](#the-challenge)
   - [Links](#links)
 - [Author](#author)
-
 
 ## Overview
 
@@ -20,12 +19,17 @@ Users should be able to:
 - See hover states for all interactive elements on the page
 - Filter job listings based on the categories
 
+### Built with
+
+- Semantic HTML5 markup
+- [Vite](https://vitejs.dev/)
+- SCSS and modules
+- Flexbox
+- [React](https://reactjs.org/) - JS library
 
 ### Links
 
 - Live Site URL: [live demo](https://zkindest.github.io/fe-c4-job-listings-react/)
-
-
 
 ## Author
 

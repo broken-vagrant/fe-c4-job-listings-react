@@ -6,7 +6,7 @@ import classes from './list-card.module.scss';
 
 const ListCard = React.memo(({ item }: { item: JobItem }) => {
   return (
-    <article className={classes['list-card']}>
+    <div className={classes['list-card']}>
       <div className={classes.info}>
         <div className={classes.logo}>
           <img src={item.logo} alt="photosnap company logo" />
@@ -20,7 +20,7 @@ const ListCard = React.memo(({ item }: { item: JobItem }) => {
             </span>
           </div>
           <a href="#" className={classes.title}>
-            <div>{item.position}</div>
+            <h1>{item.position}</h1>
           </a>
           <div className={classes["bottom-details"]}>
             <span className={classes.dot}>{item.postedAt}</span>
@@ -39,7 +39,7 @@ const ListCard = React.memo(({ item }: { item: JobItem }) => {
           ? item.tools.map((tool, i) => <InfoTag key={i}>{tool}</InfoTag>)
           : null}
       </div>
-    </article>
+    </div>
   );
 });
 
