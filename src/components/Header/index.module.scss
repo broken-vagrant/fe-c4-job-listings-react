@@ -1,0 +1,13 @@
+header {
+  height: 10rem;
+  background-color: $color-primary;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url($image-path+"/bg-header-desktop.svg") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}

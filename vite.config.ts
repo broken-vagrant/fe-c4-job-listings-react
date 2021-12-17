@@ -4,5 +4,13 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/fe-c4-job-listings-react/'
+  base: '/fe-c4-job-listings-react/',
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/sass/index";`,
+        charset: false
+      }
+    }
+  }
 })

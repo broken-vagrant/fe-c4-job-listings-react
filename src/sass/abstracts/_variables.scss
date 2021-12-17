@@ -1,0 +1,73 @@
+// COLORS
+// primary
+$color-primary: hsl(180, 29%, 50%);
+
+// unused, might delete later
+$color-blue: hsl(233, 26%, 24%);
+$color-lime-green: hsl(136, 65%, 51%);
+$color-lime-green-1: hsl(165, 69%, 48%);
+$color-bright-cyan: hsl(192, 70%, 51%);
+
+// neutral
+$color-lightgrayish-cyan-1: hsl(180, 52%, 96%);
+$color-lightgrayish-cyan-2: hsl(180, 31%, 95%);
+$color-darkgrayish-cyan: hsl(180, 8%, 52%);
+$color-verydarkgrayish-cyan: hsl(180, 14%, 20%);
+
+// sidebar backdrop
+$color-sidebar-backdrop: rgba(155, 115, 115, 0.32);
+
+// overlay colors
+$color-gray-1: hsla(233, 6%, 73%, 0.068);
+$color-gray-2: hsla(240, 11%, 65%, 0.11);
+
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+
+// FONT
+$default-font-size: 1.8rem;
+
+// VIEWPORT
+$vw-mobile-max: 375px;
+$vw-desktop-max: 1440px;
+
+// PATH
+$image-path: "../images";
+
+// SHADOW
+$shadow-smooth-8: 0 1px 1px hsla(0deg, 0%, 0%, 0.075),
+  0 2px 2px hsla(0deg, 0%, 0%, 0.075), 0 4px 4px hsla(0deg, 0%, 0%, 0.075),
+  0 8px 8px hsla(0deg, 0%, 0%, 0.075);
+$shadow-smooth-16: 0 1px 1px hsla(0deg, 0%, 0%, 0.075),
+  0 2px 2px hsla(0deg, 0%, 0%, 0.075), 0 4px 4px hsla(0deg, 0%, 0%, 0.075),
+  0 8px 8px hsla(0deg, 0%, 0%, 0.075), 0 16px 16px hsla(0deg, 0%, 0%, 0.075);
+
+$shadow-smooth-24: 0 1px 1px hsla(0deg, 0%, 0%, 0.08),
+  0 2px 2px hsla(0deg, 0%, 0%, 0.08), 0 4px 4px hsla(0deg, 0%, 0%, 0.08),
+  0 8px 8px hsla(0deg, 0%, 0%, 0.08), 0 16px 16px hsla(0deg, 0%, 0%, 0.08),
+  0 24px 24px hsla(0, 0%, 0%, 0.08);
+
+// linear gradients
+$linear-g-primary: linear-gradient(
+  90deg,
+  rgba(2, 0, 36, 1) 0%,
+  rgba(54, 213, 45, 1) 0%,
+  rgba(0, 212, 255, 1) 100%
+);
+
+// Genereated shadows
+
+$h: 177deg;
+$sat: 24%;
+$light: 71%;
+$shadow-elevation-low: 0.2px 0.5px 0.4px hsla($h, $sat, $light, 0.8),
+  0.7px 1.7px 1.4px -5px hsla($h, $sat, $light, 0.4);
+$shadow-elevation-medium: 0.2px 0.5px 0.4px hsla($h, $sat, $light, 0.74),
+  0.6px 1.5px 1.2px -2.5px hsla($h, $sat, $light, 0.5),
+  3.6px 8.6px 7px -5px hsla($h, $sat, $light, 0.25);
+$shadow-elevation-high: 0.2px 0.5px 0.4px hsla($h, $sat, $light, 0.69),
+  0.3px 0.8px 0.6px -1px hsla($h, $sat, $light, 0.58),
+  1.2px 2.9px 2.4px -2px hsla($h, $sat, $light, 0.46),
+  3.6px 8.6px 7px -3px hsla($h, $sat, $light, 0.35),
+  8.2px 19.6px 15.9px -4px hsla($h, $sat, $light, 0.23),
+  15.9px 37.9px 30.8px -5px hsla($h, $sat, $light, 0.12);

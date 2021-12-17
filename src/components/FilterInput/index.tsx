@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import { JobsDispatch } from '../../App';
 import FilterItem from './FilterItem';
 import { KeyboardEvent } from 'react';
+import classes from './index.module.scss';
 
 const FilterInput = ({ filters }: { filters: string[] }) => {
   const dispatch = useContext(JobsDispatch)!;
@@ -14,15 +15,15 @@ const FilterInput = ({ filters }: { filters: string[] }) => {
     }
   }
   return (
-    <div className="input-filter-wrapper">
-      <div className="input-filter">
-        <div className="wrapper">
-          <div className="field-filters">
+    <div className={classes.input__filter__wrapper}>
+      <div className={classes.input__filter}>
+        <div className={classes.wrapper}>
+          <div className={classes.left__adornment}>
             {filters.map((val) => (
               <FilterItem value={val} key={val} />
             ))}
           </div>
-          <div className="field-body">
+          <div className={classes.field__body}>
             <input
               type="text"
               name="filter"
@@ -32,7 +33,7 @@ const FilterInput = ({ filters }: { filters: string[] }) => {
             />
           </div>
         </div>
-        <div className="field-clear">
+        <div className={classes.right__adornment}>
           <button
             className="clear"
             type="button"

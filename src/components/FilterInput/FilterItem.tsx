@@ -1,10 +1,11 @@
 import { useContext } from 'react';
 import { JobsDispatch } from '../../App';
+import classes from './filter-item.module.scss';
 
 const FilterItem = ({ value }: { value: string }) => {
   const dispatch = useContext(JobsDispatch)!;
   return (
-    <div className="filter-item">
+    <div className={classes['filter-item']}>
       <span>{value}</span>
       <button
         onClick={() => dispatch({ type: 'filter-remove', payload: value })}

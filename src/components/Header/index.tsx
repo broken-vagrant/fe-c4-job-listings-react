@@ -1,3 +1,5 @@
+import './index.module.scss';
+
 const Header = () => {
   return (
     <header className="hero">

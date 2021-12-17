@@ -1,0 +1,17 @@
+.tag {
+  font-size: 0.6em;
+  font-weight: 700;
+  padding: 0.5em 0.8em;
+  border-radius: 2em;
+  text-transform: uppercase;
+  display: inline;
+  margin: 0.3em;
+}
+.tag.primary {
+  background-color: $color-primary;
+  color: $color-white;
+}
+.tag.dark {
+  background-color: $color-black;
+  color: $color-white;
+}
