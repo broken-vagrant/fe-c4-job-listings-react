@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1.5rem;
   font-size: 1rem;
   padding: 1.5em 2em;
   box-shadow: $shadow-elevation-high;
@@ -9,7 +10,16 @@
   border-radius: 4px;
   position: relative;
 
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-lg) {
+    font-size: 0.95rem;
+    padding: 1em 1.5em;
+  }
+
+  @media (max-width: $vw-md) {
+    font-size: 0.85rem;
+    padding: 0.8em 1.3em;
+  }
+  @media (max-width: $vw-sm) {
     flex-direction: column;
     padding: 0.5em 1em;
     .info {
@@ -18,15 +28,16 @@
   }
   .info {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 40%;
 
     .logo {
       user-select: none;
-      @media (max-width: $vw-mobile-max) {
+      flex-shrink: 0;
+      @media (max-width: $vw-sm) {
         width: 3.5em;
         height: 3.5em;
         position: absolute;
-        top: -15%;
+        top: -10%;
         left: 6%;
       }
       img {
@@ -38,7 +49,7 @@
     }
     .details {
       margin-left: 2em;
-      @media (max-width: $vw-mobile-max) {
+      @media (max-width: $vw-sm) {
         margin-left: 0;
         margin-top: 2em;
       }
@@ -67,10 +78,6 @@
         font-weight: bold;
         margin: 0.8em 0;
       }
-      @media (max-width: $vw-mobile-max) {
-        font-size: 0.8em;
-        color: $color-black;
-      }
     }
     .bottom-details {
       color: $color-darkgrayish-cyan;
@@ -92,11 +99,12 @@
     justify-content: flex-end;
     flex-grow: 1;
     flex-flow: row wrap;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-sm) {
       justify-content: flex-start;
       border-top: 1px solid lightgray;
       margin-top: 1em;
       padding-top: 1em;
+      width: 100%;
     }
     .info-tag + .info-tag {
       margin-left: 1em;
@@ -105,7 +113,7 @@
 }
 
 .list-card.featured {
-  border-left: 4px solid $color-primary;
+  border-left: 5px solid $color-primary;
 }
 .list-card + .list-card {
   margin-top: 3rem;

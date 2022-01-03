@@ -6,7 +6,7 @@ import classes from './list-card.module.scss';
 
 const ListCard = React.memo(({ item }: { item: JobItem }) => {
   return (
-    <div className={classes['list-card']}>
+    <div className={`${classes['list-card']} ${item.featured ? classes.featured : ''}`}>
       <div className={classes.info}>
         <div className={classes.logo}>
           <img src={item.logo} alt="photosnap company logo" />

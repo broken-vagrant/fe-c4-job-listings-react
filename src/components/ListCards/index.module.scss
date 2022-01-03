@@ -1,7 +1,7 @@
 .jobs {
   padding: 0rem 3rem 4rem;
 
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-sm) {
     padding: 0rem 0.5rem 4rem;
   }
 }

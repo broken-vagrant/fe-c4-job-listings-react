@@ -1,10 +1,10 @@
 .input__filter__wrapper {
-  max-width: $vw-desktop-max;
+  max-width: $vw-2xl;
   padding: 4rem 3rem 4rem;
   width: 100%;
   position: relative;
   margin-top: -6rem;
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-sm) {
     padding: 4rem 0.5rem 4rem;
     margin-top: -12rem;
   }
@@ -20,7 +20,14 @@
   flex-flow: row wrap;
   padding: 1em 2em;
   box-shadow: $shadow-elevation-high;
-  @media (max-width: $vw-mobile-max) {
+  @media (max-width: $vw-lg) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: $vw-md) {
+    font-size: 0.8rem;
+    padding: 0.9em;
+  }
+  @media (max-width: $vw-sm) {
     padding: 0.7em;
   }
   .wrapper {
@@ -28,7 +35,7 @@
     align-items: center;
     flex-flow: row wrap;
     flex-grow: 1;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-sm) {
       flex-basis: 85%;
     }
   }
@@ -44,7 +51,7 @@
     flex-shrink: 0;
     display: flex;
     flex-flow: row wrap;
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-sm) {
       flex-shrink: 1;
     }
   }
@@ -61,7 +68,7 @@
       cursor: pointer;
       font-weight: 700;
     }
-    @media (max-width: $vw-mobile-max) {
+    @media (max-width: $vw-sm) {
       button {
         font-size: 0.8em;
         text-decoration: none;

@@ -28,8 +28,10 @@ $color-black: hsl(0, 0%, 0%);
 $default-font-size: 1.8rem;
 
 // VIEWPORT
-$vw-mobile-max: 375px;
-$vw-desktop-max: 1440px;
+$vw-sm: 640px;
+$vw-md: 768px;
+$vw-lg: 1024px;
+$vw-2xl: 1440px;
 
 // PATH
 $image-path: "../images";
