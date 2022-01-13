@@ -16,7 +16,6 @@
   }
 
   @media (max-width: $vw-md) {
-    font-size: 0.85rem;
     padding: 0.8em 1.3em;
   }
   @media (max-width: $vw-sm) {
@@ -54,14 +53,20 @@
         margin-top: 2em;
       }
     }
-    .top-details {
+    .details__top {
       user-select: none;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      span {
+        display: inline-block;
+      }
       .name {
         color: $color-primary;
-        font-size: 0.7em;
+        font-size: 0.8em;
         font-weight: 700;
       }
-      &-tags {
+      &__tags {
         margin-left: 1em;
       }
     }
@@ -79,9 +84,9 @@
         margin: 0.8em 0;
       }
     }
-    .bottom-details {
+    .details__bottom {
       color: $color-darkgrayish-cyan;
-      font-size: 0.7em;
+      font-size: 0.8em;
       user-select: none;
       span {
         margin: 0.3em 0;

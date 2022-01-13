@@ -12,17 +12,17 @@ const ListCard = React.memo(({ item }: { item: JobItem }) => {
           <img src={item.logo} alt="photosnap company logo" />
         </div>
         <div className={classes.details}>
-          <div className={classes['top-details']}>
+          <div className={classes.details__top}>
             <span className={classes.name}>{item.company}</span>
-            <span className={classes["top-details-tags"]}>
+            <span className={classes.details__top_tags}>
               {item.new ? <Tag>New!</Tag> : null}
               {item.featured ? <Tag fill="dark" >Featured</Tag> : null}
             </span>
           </div>
-          <a href="#" className={classes.title}>
+          <a href="javascript:void()" className={classes.title}>
             <h1>{item.position}</h1>
           </a>
-          <div className={classes["bottom-details"]}>
+          <div className={classes.details__bottom}>
             <span className={classes.dot}>{item.postedAt}</span>
             <span className={classes.dot}>{item.contract}</span>
             <span>{item.location}</span>
