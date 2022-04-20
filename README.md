@@ -34,5 +34,3 @@ Users should be able to:
 ## Author
 
 - Website - [Afroz's site](https://zkindest.github.io)
-- Frontend Mentor - [@zkindest](https://www.frontendmentor.io/profile/zkindest)
-- Twitter - [@zkindest](https://www.twitter.com/zkindest)
